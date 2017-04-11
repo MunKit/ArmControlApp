@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ArmControlApp</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="up">Up</string>
+    <string name ="Start">Start</string>
+    <string name = "Stop">Stop</string>
+    <string name="down">Down</string>
+    <string name = "hold">Hold</string>
+    <string name = "release">Release</string>
+</resources>

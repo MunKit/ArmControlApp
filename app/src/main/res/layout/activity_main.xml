@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.munkit.armcontrolapp.MainActivity">
+
+    <Button
+        android:text="@string/Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectbutton"
+        android:layout_alignBaseline="@+id/Clampbutton"
+        android:layout_alignBottom="@+id/Clampbutton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="61dp" />
+
+    <Button
+        android:text="@string/hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Clampbutton"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/respondtext"
+        android:layout_toEndOf="@+id/connectbutton"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:text="@string/disconnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/respondtext"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="5"
+        android:id="@+id/seekBar4"
+        android:rotation="270"
+        android:translationX="90dp"
+        android:layout_below="@+id/connectbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/connectbutton" />
+
+
+
+
+</RelativeLayout>
